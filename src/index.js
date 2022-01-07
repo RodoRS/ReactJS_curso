@@ -1,17 +1,65 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+//Css
+import 'bootstrap/dist/css/bootstrap.css';
+import './global.css'
+
+//Pages
+/* import BadgeNew from './pages/BadgeNew';
+import Badges from './pages/Badges' */
+
+//Components
+import App from './components/App';
+
+const container = document.getElementById('app');
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <App />, 
+  container
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+
+/* EJEMPLOS
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+//const jsx = <h1>Hello, Curso de React </h1>
+
+//React.createElement('_tipoElemento', {Atributos}, 'children');
+// const element = React.createElement(
+//   'a', 
+//   { href: 'https://platzi.com' }, 
+//   'Ir a Platzi'
+// );  
+const name = "Rodrigo";
+const sum = () => 3+3;
+// const element = React.createElement(
+//   'h1',
+//   {},
+//   `Hola, soy ${name}`
+// );
+
+//const jsx =  <h1> Hola, soy, {'_Expresiones'} </h1>;
+//const jsx =  <h1> Hola, soy, {sum()} </h1>;
+const jsx = <div>
+  <h1> Hola, Soy {name} _ JSX</h1>
+  <p> Soy Ingeniero Mecatrónico </p>
+</div>;
+
+const element = React.createElement(
+  'div',
+  {},
+  React.createElement('h1',{}, `Hola, soy ${name} _ React`),
+  React.createElement('p', {}, 'Soy ingeniero Mecatrónico')
+);
+
+const container = document.getElementById('app');
+
+ReactDOM.render(jsx, container);
+
+
+""react-router-dom":^6.2.1"
+ */

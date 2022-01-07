@@ -1,0 +1,13 @@
+.DeleteBadgeModal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.DeleteBadgeModal__buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
